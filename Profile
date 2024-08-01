@@ -1,0 +1,66 @@
+html_content = '''
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Cá Nhân</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0D0D0D;
+            color: #D1C4E9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/3f/Bagua-circle.svg');
+            background-size: cover;
+            background-position: center;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+        h1 {
+            color: #B39DDB;
+        }
+        p {
+            line-height: 1.6;
+        }
+        a {
+            color: #9575CD;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Giới Thiệu</h1>
+        <p>Chào mừng bạn đến với trang cá nhân của tôi! Tôi là [Tên của bạn], một [Công việc/Chuyên môn của bạn] đam mê [Sở thích/Lĩnh vực quan tâm của bạn].</p>
+        <h1>Kinh Nghiệm Làm Việc</h1>
+        <p>[Chi tiết về kinh nghiệm làm việc của bạn]</p>
+        <h1>Dự Án</h1>
+        <p>[Chi tiết về các dự án bạn đã thực hiện]</p>
+        <h1>Kỹ Năng</h1>
+        <p>[Liệt kê các kỹ năng của bạn]</p>
+        <h1>Liên Hệ</h1>
+        <p>Bạn có thể liên hệ với tôi qua email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+    </div>
+</body>
+</html>
+'''
+
+with open('index.html', 'w', encoding='utf-8') as file:
+    file.write(html_content)
+
+print("Tệp HTML đã được tạo thành công.")
